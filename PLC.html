@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modulos de aprendizaje PLC Control Shield Arduino </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        header h1 {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2em;
+            text-align: justified;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .line-with-text {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .line-with-text::before,
+        .line-with-text::after {
+            content: "";
+            flex: 1;
+            border-bottom: 2px solid black; /* Cambia el grosor y color según desees */
+        }
+
+        .line-with-text::before {
+            margin-right: 10px; /* Espaciado antes del texto */
+        }
+
+        .line-with-text::after {
+            margin-left: 10px; /* Espaciado después del texto */
+        }
+
+        .line-with-text span {
+            font-size: 16px; /* Tamaño del texto */
+            font-weight: bold; /* Negrita opcional */
+            color: black; /* Color del texto */
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="end.jpg" alt="PLC Control Shield Arduino">
+        <h1>PLC Control Shield Arduino </h1>
+    </header>
+    <nav>
+        <a href="introducción.html">Introducción</a>
+        <a href="Automatización Industrial.html">Automatización Industrial</a>
+        <a href="PLC.html">PLC Control Shield Arduino</a>
+        <a href="conclusion.html"> Conclusión</a>
+
+    </nav>
+    <main>
+        <section id="introduccion">
+
+
+            <h2>¿Qué es un PLC?</h2>
+
+
+            <p>
+              Un PLC (Controlador Lógico Programable) es un dispositivo
+ electrónico diseñado para automatizar procesos
+ industriales mediante la recepción de señales de entrada,
+ su procesamiento y la emisión de señales de salida para
+ controlar diversos equipos. Su principal característica es
+ la capacidad de ser programado para ejecutar
+ secuencias lógicas, adaptándose a las necesidades
+ específicas de un sistema automatizado
+ 
+            </p>
+           
+           <img src="PLC2.jpg" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+<p>
+
+       <br>
+
+<div class="line-with-text">
+       <span> Aplicaciones en la Industria </span>
+    </div>
+
+        <img src="industria.png" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+      <p>
+     
+ <h2> PLC   VS  ARDUINO </h2>
+<p>
+Los PLCs son herramientas estándar en la industria
+ por su robustez y especialización, Arduino ofrece
+ una alternativa accesible para fines educativos.
+ Usar un Arduino con un PLC Shield permite
+ introducir a los estudiantes en conceptos de
+ automatización, simulando aplicaciones industriales
+ a menor escala y costo.
+</p>
+
+<img src="plc y arduino.png" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+<p>
+<b>Usa un PLC si:</b>
+<ol>
+
+<ul>-Trabajas en un entorno industrial.</ul>
+<ul>-Necesitas alta confiabilidad, escalabilidad y soporte para protocolos industriales.</ul>
+<ul>-Estás controlando maquinaria crítica o procesos en tiempo real.</ul>
+</ol>
+<b>Usa un Arduino si:</b>
+<ol>
+<ul>-Estás desarrollando un prototipo, proyecto educativo o personal.</ul>
+<ul>-Tienes un presupuesto limitado.</ul>
+<ul>-No necesitas cumplir con estándares industriales.</ul>
+</ol>
+
+       <br>
+
+<div class="line-with-text">
+       <span> DESCRIPCIÓN DEL MÓDULO DIDÁCTICO </span>
+    </div>
+
+<p>
+<b> Nombre del módulo:  </b>               "PLC Control Shield Arduino"
+</p>
+<p>
+ Este módulo didáctico está diseñado para introducir a los estudiantes
+ en el aprendizaje de automatización industrial, utilizando herramientas
+ accesibles y prácticas. El sistema simula el funcionamiento básico de un
+ PLC mediante el uso de un Arduino UNO R3 combinado con un PLC
+ Control Shield, facilitando la comprensión de conceptos clave como
+ entradas, salidas y programación lógica
+ </p>
+
+<img src="autoc.png" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+
+<h2> Componentes principales</h2>
+<p>
+Algunos de los componentes ocupados para la realización de este proyecto fueron:
+</p>
+
+<p>
+<b>1.PLC Control Shield Arduino (6 entradas, 5 salidas)</b>
+>/p>
+<ol>
+ <ul>-Este shield se conecta directamente al Arduino y amplía su capacidad para controlar
+ sistemas automatizados básicos.</ul>
+ <ul>-Entradas: Se utilizan para recibir señales de sensores o interruptores.</ul>
+ <ul>Salidas: Permiten controlar actuadores como luces, motores o relevadores.</ul>
+<p>
+<b>Ventajas:</b>
+ <ul>-Simplifica las conexiones al integrar entradas y salidas configuradas específicamente
+ para aplicaciones de control.</ul>
+<ul>- Compatible con proyectos educativos y prototipos industriales.</ul>
+</p>
+</ol>
+<img src="ppp.png" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+<p>
+<b>2. Conectores banana de seguridad (hembra) 4mm</b>
+</p>
+<ol>
+<p>
+ Función: Facilitan la conexión de componentes eléctricos de forma
+ segura y ordenada.</ul>
+</p>
+<p>
+ <b>Características:</b>
+</p>
+ <ul>-Estándar de seguridad para evitar cortocircuitos o accidentes
+ eléctricos.</ul>
+ <ul>-Conexión rápida y confiable con cables de prueba.</ul>
+ <ul>-Compatible con equipos educativos e industriales.</ul>
+</ol>
+
+<img src="plc.png" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+<p>
+ <b>3. Interruptor SPST (Single Pole Single Throw)</b>
+</p>
+<p>
+ <ul>-Uso: Control básico de encendido y apagado de circuitos eléctricos.</ul>
+</p>
+<p>
+ <ul>-<b>Características:</b>
+</p>
+ <ul>-Actúa como una entrada para el sistema, simulando señales
+ provenientes de botones o sensores.</ul>
+ <ul>-Diseño simple y eficiente para experimentos básicos de automatización.</ul>
+ <ul>-<b>Ejemplo:</b> Controlar el encendido de una lámpara o motor a través de una
+ señal lógica.</ul>
+</ol>
+
+<img src="4mm.png" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+<p>
+<b>4.Arduino UNO R3 (Revisión 3)</b>
+</p>
+<p>
+ <b>Ventajas y características:</b>
+</p>
+<p>
+ <ul>-Microcontrolador ATmega328P.</ul>
+ 14 pines digitales de entrada/salida, 6 pines
+ analógicos.</ul>
+ <ul>-Compatible con una amplia gama de sensores y
+ actuadores.</ul>
+ <ul>-Programable en Arduino IDE, un entorno amigable
+ para estudiantes.</ul>
+ <ul>-Alimentación flexible: USB o fuente externa de 7
+12V.</ul>
+</p>
+<ul>- <b>Uso en el módulo: </b>Sirve como el cerebro del sistema,
+ procesando las señales de entrada y ejecutando las
+ órdenes programadas para las salidas.</ul>
+
+<img src="arduino.png" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+<br>
+
+<h2> Funcionamiento general </h2>
+
+<p>
+<b>Interconexión de los componentes:</b>
+</p>
+<ol>
+ <ul>-El Arduino UNO R3 se conecta al PLC Control Shield, que a su vez recibe señales de los
+ interruptores SPST o sensores mediante los conectores banana.</ul>
+ <ul>-Los cables calibre 20 THW se utilizan para conectar de manera segura todos los elementos.</ul>
+ <ul>-Las salidas del shield controlan actuadores como LEDs, motores o relevadores.</ul>
+</ol>
+<p>
+<b> Conexión:</b>
+</p>
+<ol>
+ <ul>-El interruptor se conecta a una entrada digital del shield.</ul>
+ <ul>-El LED se conecta a una salida digital del shield.</ul>
+</ol>
+<p>
+ <b>Programación en Arduino IDE:</b>
+</p>
+<ol>
+ <ul>-Se configura el pin del interruptor como entrada y el pin del LED como salida.</ul>
+ <ul>-El programa detecta el estado del interruptor y activa o desactiva el LED en consecuencia.</ul>
+</ol>
+</p>
+
+<br>
+
+<div class="line-with-text">
+       <span> RESULTADO FINAL </span>
+    </div>
+
+<img src="final.jpg" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+
+
+   Conoce más sobre ete tema , te invitamos a explorar las otras secciónes de nuestra página que se encuentra en la parte superior. 
+</p>
+
+        </section> 
+    </main>
+    <footer>
+        <p>© 2024 Automatización Industrial. Proyecto final Comunicación Cientifica .</p>
+    </footer>
+</body>
+</html>

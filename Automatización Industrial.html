@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Automatización Indusctrial </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        header h1 {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2em;
+            text-align: justified;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .line-with-text {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .line-with-text::before,
+        .line-with-text::after {
+            content: "";
+            flex: 1;
+            border-bottom: 2px solid black; /* Cambia el grosor y color según desees */
+        }
+
+        .line-with-text::before {
+            margin-right: 10px; /* Espaciado antes del texto */
+        }
+
+        .line-with-text::after {
+            margin-left: 10px; /* Espaciado después del texto */
+        }
+
+        .line-with-text span {
+            font-size: 16px; /* Tamaño del texto */
+            font-weight: bold; /* Negrita opcional */
+            color: black; /* Color del texto */
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="autom.jpg" alt="Automatización Industrial">
+        <h1> Automatización Industrial </h1>
+    </header>
+    <nav>
+        <a href="introducción.html">Introducción</a>
+        <a href="Automatización Industrial.html">Automatización Industrial</a>
+        <a href="PLC.html">PLC Control Shield Arduino</a>
+        <a href="conclusion.html"> Conclusión</a>
+
+
+    </nav>
+    <main>
+        <section id="introduccion">
+            <h2>¿Qué es la Automatización Industrial?</h2>
+
+            <p>
+
+La automatización industrial es el uso de sistemas, como computadoras, robots y tecnologías avanzadas, para realizar tareas y procesos industriales de manera automática, reduciendo o eliminando la necesidad de intervención humana. Esto incluye el control de maquinaria, sistemas de producción y monitoreo de procesos en tiempo real. Su objetivo principal es optimizar la eficiencia, mejorar la calidad del producto y reducir costos operativos.
+
+La automatización se puede encontrar en una amplia variedad de industrias, como la automotriz, alimentaria, farmacéutica, energética y muchas otras. Estos sistemas automatizados pueden realizar tareas repetitivas, peligrosas o que requieren alta precisión, superando las limitaciones humanas y aumentando la productividad.
+
+   </p>
+
+
+<img src="in.jpg" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+
+
+<h2>Historia y Evolución de la Automatización</h2>
+<p>
+La automatización industrial tiene sus raíces en la Revolución Industrial del siglo XVIII, cuando las máquinas de vapor comenzaron a reemplazar la fuerza manual en los procesos de producción. A continuación, se detallan los principales hitos en su evolución:
+</p>
+<ol>
+<p>
+<b>1. Primera Revolución Industrial (siglo XVIII):</b>
+
+   <ul> - Introducción de las máquinas de vapor y sistemas mecánicos en la producción.</ul>
+   <ul> - Creación de fábricas y sistemas de producción en masa.</ul>
+</p>
+<p>
+<b>2. Segunda Revolución Industrial (siglo XIX):</b>
+  <ul> - Uso de la electricidad para alimentar maquinaria.</ul>
+  <ul> - Desarrollo de la cadena de montaje por Henry Ford, que revolucionó la producción en masa.</ul>
+</p>
+<p>
+<b>3. Tercera Revolución Industrial (siglo XX):</b>
+
+  <ul> - Aparición de la electrónica y las computadoras.</ul>
+  <ul> - Introducción de los Controladores Lógicos Programables (PLC) en la década de 1960, que permitieron automatizar procesos de manera más flexible y eficiente.</ul>
+  <ul> - Uso de robots industriales en cadenas de producción, especialmente en la industria automotriz.</ul>
+</p>
+<p>
+<b>4. Cuarta Revolución Industrial (siglo XXI):</b>
+
+  <ul> - Integración de la automatización con tecnologías digitales avanzadas, como el Internet de las Cosas (IoT), la inteligencia artificial (IA) y el big data.</ul>
+  <ul> - Introducción del concepto de Industria 4.0, donde las fábricas son inteligentes y están interconectadas, permitiendo una producción más personalizada y eficiente.</ul>
+</ol>
+</p>
+
+
+
+<img src="ev.jpg" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+
+
+ <h2>Importancia en la Industria Moderna</h2>
+
+<p>
+En la actualidad, la automatización industrial desempeña un papel crucial en la economía global y el desarrollo tecnológico. Sus beneficios incluyen:
+</p>
+<ol>
+<p>
+<b>1. Aumento de la Eficiencia:</b>
+
+  <ul> - Permite operar de manera continua, 24/7, sin interrupciones por descanso humano.</ul>
+  <ul> - Optimiza los tiempos de producción y reduce desperdicios.</ul>
+</p>
+<p>
+<b>2. Mejora de la Calidad:</b>
+
+  <ul> - Asegura la uniformidad y precisión en la producción.</ul>
+  <ul> - Reduce errores humanos y garantiza altos estándares de calidad.</ul>
+</p>
+<p>
+<b>3. Reducción de Costos:</b>
+
+ <ul>  - Disminuye la necesidad de mano de obra directa en tareas repetitivas.</ul>
+  <ul> - Reduce costos asociados a errores y desperdicios.</ul>
+</p>
+<p>
+<b>4. Seguridad Laboral:</b>
+
+  <ul> - Reemplaza a los trabajadores en tareas peligrosas o en entornos hostiles.</ul>
+  <ul> - Mejora las condiciones laborales al disminuir la exposición a riesgos.</ul>
+</p>
+<p>
+<b>5. Sostenibilidad:</b>
+
+  <ul> - Optimiza el uso de energía y recursos, contribuyendo a una producción más sostenible.</ul>
+  <ul> - Facilita el monitoreo de procesos para minimizar el impacto ambiental.</ul>
+</ol>
+</p>
+
+
+<img src="ooo.png" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+
+<br>
+<p>
+En resumen, la automatización industrial no solo mejora la competitividad de las empresas, sino que también contribuye al desarrollo de sociedades más tecnológicas y sostenibles. Es una herramienta indispensable en la era de la digitalización y la transformación industrial.
+</p>
+           <br>
+
+<div class="line-with-text">
+       <span> Tipos de Automatización Industrial </span>
+    </div>
+
+<p>
+La automatización industrial puede clasificarse en tres categorías principales, según la flexibilidad del sistema y el volumen de producción esperado. Estos son automatización fija, automatización programable y automatización flexible.
+</p>
+<ol>
+
+<p>
+<b>1.Automatización Fija (Hard Automation)</b>:
+Es un sistema diseñado para realizar una tarea específica de manera repetitiva y constante. Generalmente se utiliza en procesos de fabricación de alto volumen y baja variedad.
+</p>
+<ol>
+<p>
+<b>Características:</b>
+
+<ul>-Alta especialización: Diseñada para una tarea específica.</ul>
+<ul>-Alta velocidad y eficiencia.</ul>
+<ul>-Baja flexibilidad: Los cambios en el producto requieren rediseñar o reemplazar el sistema.</ul>
+<ul>-Elevada inversión inicial, pero costos operativos bajos cuando se producen grandes volúmenes.</ul>
+</p>
+<p>
+<b>Ejemplos de aplicación:</b>
+
+<ul>-Líneas de ensamblaje automotriz.</ul>
+<ul>-Procesos de embotellado y envasado.</ul>
+<ul>-Fabricación de productos electrónicos con diseños estándar.</ul>
+</p>
+<p>
+<b>Ventajas:</b>
+
+<ul>-Producción masiva a bajo costo unitario.</ul>
+<ul>-Alta precisión y consistencia.</ul>
+</p>
+<p>
+<b>Desventajas:</b>
+
+<ul>-Falta de adaptabilidad a cambios en el diseño del producto.</ul>
+<ul>-Elevados costos en caso de ajustes o rediseños.</ul>
+</p>
+</ol>
+
+
+
+<img src="fija.jpg" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+
+
+
+<br>
+<p>
+<b>2.Automatización Programable:</b>Es un sistema que permite la configuración y reprogramación para fabricar una variedad de productos. Es ideal para producir lotes medianos o pequeños con ciertas variaciones.
+</p>
+<ol>
+
+<p>
+<b>Características:</b>
+<ul>-Moderada flexibilidad: Se puede reprogramar según las necesidades del producto.</ul>
+<ul>-Uso de controladores programables como PLCs o microcontroladores.</ul>
+<ul>-Velocidad media en comparación con la automatización fija.</ul>
+</p>
+<p>
+<b>Ejemplos de aplicación:</b>
+
+<ul>-Producción de piezas personalizadas en la industria automotriz (ejemplo: diferentes modelos de autos).</ul>
+<ul>-Máquinas CNC (Control Numérico por Computadora).</ul>
+<ul>-Procesos de fabricación de maquinaria industrial.</ul>
+</p>
+<p>
+<b>Ventajas:</b>
+
+<ul>-Mayor capacidad de adaptación frente a cambios en el diseño.</ul>
+<ul>-Ideal para producir lotes variados sin necesidad de rediseñar la máquina.</ul>
+</p>
+<p>
+<b>Desventajas:</b>
+
+<ul>-Menor velocidad y eficiencia en comparación con la automatización fija.</ul>
+<ul>-Inversión inicial moderada, con costos operativos más elevados si el lote es pequeño.</ul>
+</p>
+</ol>
+
+
+
+<img src="pro.jpg" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+
+
+<br>
+
+
+
+
+<p>
+<b>3.Automatización Flexible</b>:También conocida como automatización adaptable, es un sistema altamente versátil que permite cambios frecuentes y rápidos en el diseño del producto sin necesidad de interrumpir significativamente el proceso de producción.
+</p>
+<ol>
+<p>
+<b>Características:</b>
+</p>
+
+<p>
+<ul>- Alta flexibilidad:Capacidad para cambiar entre diferentes productos de forma casi inmediata.</ul>
+<ul>- Uso de sistemas avanzados como robots industriales, sensores inteligentes y redes IoT.</ul>
+<ul>- Compatible con la filosofía de la Industria 4.0.</ul>
+<ul>- Costos iniciales altos, pero se amortizan gracias a su versatilidad.</ul>
+</p>
+<p>
+<b>Ejemplos de aplicación:</b> 
+<ul>-Producción de teléfonos móviles con múltiples modelos y configuraciones en una sola línea de ensamblaje.</ul>
+<ul>-Industria farmacéutica para fabricar medicamentos en diferentes presentaciones.</ul>
+<ul>-Líneas de producción integradas con sistemas robóticos avanzados.</ul>
+</p>
+<p>
+<b>Ventajas:</b>
+
+<ul>-Responde rápidamente a las demandas del mercado.</ul>
+<ul>-Reduce los tiempos de inactividad al cambiar entre productos.</ul>
+<ul>-Soporta la producción personalizada (lotes pequeños).</ul>
+</p>
+
+<p>
+<b>Desventajas:</b>
+
+<ul>-Requiere tecnologías avanzadas y capacitación especializada.</ul>
+<ul>-Elevados costos iniciales de implementación</ul>
+</p>
+</ol>
+
+
+<img src="flex.jpg" alt="Ejemplo de PLC Control Shield" style="max-width:100%; height:auto; margin: 1em 0;">
+
+
+<p>
+
+<h1>nola</h1>
+
+</p>
+
+
+
+
+
+
+        </section> 
+    </main>
+    <footer>
+        <p>© 2024 Automatización Industrial. Proyecto final Comunicación Cientifica .</p>
+    </footer>
+</body>
+</html>
